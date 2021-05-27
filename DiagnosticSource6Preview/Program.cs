@@ -20,14 +20,14 @@ namespace DiagnosticSource6Preview
             Activity.ForceDefaultIdFormat = true;
             using (var act = activitySource.StartActivity("TestActivity1", ActivityKind.Client, "InvalidW3CIdParent"))
             {
-                // act will not be null.
+                // act will be null.
                 Console.WriteLine($"Is Activity created with ForceDefaultIdFormat set to True: {act!=null}");
             }
 
             Activity.ForceDefaultIdFormat = false;
             using (var act = activitySource.StartActivity("TestActivity2", ActivityKind.Client, "InvalidW3CIdParent"))
             {
-                // act will be null
+                // act will be null.
                 Console.WriteLine($"Is Activity created with ForceDefaultIdFormat set to False: {act!=null}");
             }
         }
