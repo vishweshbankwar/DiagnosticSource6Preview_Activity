@@ -1,6 +1,6 @@
 # DiagnosticSource6Preview_Activity
 
-Latest preview version 6 of System.Diagnostic.DiagnosticSource has a functionality change when trying to create activity by passing invalid W3CId for parent.
+Latest preview version 6 of System.Diagnostic.DiagnosticSource has a functionality change when trying to create activity by passing invalid W3C Id for parent.
 
 **Expected Behavior**: 
 
