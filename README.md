@@ -1,13 +1,13 @@
 # DiagnosticSource6Preview_Activity
 
-Latest preview version 6 of System.Diagnostic.DiagnosticSource has a functionality change when trying to create activity by passing invalid W3C Id for parent.
+Latest preview version 6 of System.Diagnostic.DiagnosticSource has a behavior change when trying to create activity by passing invalid W3C Id for parent.
 
-**Expected Behavior**: 
+**Previous Behavior**: 
 
 Activity is not created when starting activity by calling activitySource.StartActivity("TestActivity", ActivityKind.Client, "InvalidW3CIdParent"). This behavior is expected to be same whether Activity.ForceDefaultIdFormat is set to True or False.
 
 
-**Actual Behavior**: 
+**New Behavior**: 
 
 Activity is created when starting activity by calling activitySource.StartActivity("TestActivity", ActivityKind.Client, "InvalidW3CIdParent") and setting Activity.ForceDefaultIdFormat to True.
 
