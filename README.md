@@ -14,4 +14,4 @@ Activity is created when starting activity by calling activitySource.StartActivi
 Activity is not created when starting activity by calling activitySource.StartActivity("TestActivity", ActivityKind.Client, "InvalidW3CIdParent") and setting Activity.ForceDefaultIdFormat to False.
 
 
-The `main` branch of this repo shows example code for the behavior noted above with version 6.0.0-preview.4.21253.7. `DiagnosticSource5_Activity` branch confirms the previous behavior with latest stable release version 5.0.1.
+The `main` branch of this repo shows example code using .NET5.0 console app for the behavior noted above with version 6.0.0-preview.3.21201.4. `DiagnosticSource5_Activity` branch uses 6.0.0-preview.2.21154.6 which confirms the previous behavior.
